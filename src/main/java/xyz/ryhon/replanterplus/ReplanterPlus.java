@@ -268,6 +268,9 @@ public class ReplanterPlus implements ModInitializer {
 	}
 
 	void holdFortuneItem(PlayerEntity p) {
+		if(!autoSwitch)
+			return;
+
 		int maxLevel = 0;
 		int slot = -1;
 
